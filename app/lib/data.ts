@@ -10,6 +10,17 @@ import {
 } from './definitions';
 import { formatCurrency } from './utils';
 
+// export async function fetchAllUsers() {
+//   try {
+//     const data = await sql<CustomersTableType>`SELECT * FROM customers`;
+//     console.log(data)
+//     return data
+//   } catch (error) {
+//     console.error('Database Error:', error);
+//     throw new Error('Failed to fetch revenue data.');
+//   }
+// }
+
 export async function fetchRevenue() {
   // Add noStore() here prevent the response from being cached.
   // This is equivalent to in fetch(..., {cache: 'no-store'}).
